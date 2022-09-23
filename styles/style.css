@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(238, 238, 238);
+   
+}
+
+/* Estilos NAV */
+
+.logo-nav {
+    width: 190px;
+    margin-left: 30px;
+}
+.iconos img{
+    width: 25px;
+    margin-left: 35px;
+}
+.color-icon {
+    color: #350259;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.color-icon:hover {
+    color: #949704;
+}
+.iconos img:hover{
+    
+}
+.iconos :last-child {
+    width: 55px;
+    transition:400ms
+}
+
+.iconos :last-child:hover {
+    width: 60px;
+}
+
+
+/* Página Login */
+
+.max-alto {
+    height: 100vh;
+}
+
+.izquierdo {
+    background-image: url("https://demo.gestiona360.com.co/wp-content/uploads/2022/09/Background-Gestiona.jpg");
+    background-size: cover;
+    
+    }
+    .imgestiona{
+        width: 200px;
+    }
+    .derecho{
+    padding: 75px 100px;    
+    
+    }
+    .color{
+        background-color:#b7b901;
+        color: white;
+        text-transform: uppercase;
+    }
+    .color:hover{
+        background-color: #989b0e!important;
+        color: white !important;
+    }
+    .p{
+        font-family: 'Montserrat';
+    }
+    .form-label{
+        font-family: 'Montserrat';
+    text-transform: uppercase!important;
+    font-size: 12px;
+    }
+    
+    .form-check-label {
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-size: 12px;
+    }
+
+
+    /* Estilos Home */
+
+    .caja {
+        width: 200px;
+        height: 100px;
+        border: 1px solid;
+    }
+    .kpi {
+       
+    }
+
+    .kpi> div {
+        
+        
+    }
