@@ -80,9 +80,11 @@ body {
     /* Estilos Home */
 
     .caja {
-        width: 200px;
-        height: 100px;
+        width: 250px;
+        height: 120px;
         border: 1px solid;
+        background-color: white;
+        border-radius: 12px;
     }
     .kpi {
        
