@@ -154,10 +154,13 @@ hr {
 
 .card-body {
     font-size: 11px;
-    padding: 5px;
+    padding: 0px;
+    border: none!important;
 }
-
-
+.card {
+    border: none;
+    box-shadow: 2px 2px 5px #0000002e;
+}
 
 .badge {
     color: #545255;
@@ -167,6 +170,10 @@ hr {
 
 .table {
     margin-bottom: 0px;
+}
+
+thead {
+    background-color: #eee;
 }
 
 .tbody:last-child {
