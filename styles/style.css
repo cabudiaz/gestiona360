@@ -1,6 +1,6 @@
 body {
     background-color: rgb(238, 238, 238);
-   
+
 }
 
 /* Estilos NAV */
@@ -9,24 +9,27 @@ body {
     width: 190px;
     margin-left: 30px;
 }
-.iconos img{
+
+.iconos img {
     width: 25px;
     margin-left: 35px;
 }
+
 .color-icon {
     color: #350259;
     font-size: 25px;
     margin-right: 20px;
 }
+
 .color-icon:hover {
     color: #949704;
 }
-.iconos img:hover{
-    
-}
+
+.iconos img:hover {}
+
 .iconos :last-child {
     width: 55px;
-    transition:400ms
+    transition: 400ms
 }
 
 .iconos :last-child:hover {
@@ -43,97 +46,129 @@ body {
 .izquierdo {
     background-image: url("https://demo.gestiona360.com.co/wp-content/uploads/2022/09/Background-Gestiona.jpg");
     background-size: cover;
-    
-    }
-    .imgestiona{
-        width: 200px;
-    }
-    .derecho{
-    padding: 75px 100px;    
-    
-    }
-    .color{
-        background-color:#b7b901;
-        color: white;
-        text-transform: uppercase;
-    }
-    .color:hover{
-        background-color: #989b0e!important;
-        color: white !important;
-    }
-    .p{
-        font-family: 'Montserrat';
-    }
-    .form-label{
-        font-family: 'Montserrat';
-    text-transform: uppercase!important;
+
+}
+
+.imgestiona {
+    width: 200px;
+}
+
+.derecho {
+    padding: 75px 100px;
+
+}
+
+.color {
+    background-color: #b7b901;
+    color: white;
+    text-transform: uppercase;
+}
+
+.color:hover {
+    background-color: #989b0e !important;
+    color: white !important;
+}
+
+.p {
+    font-family: 'Montserrat';
+}
+
+.form-label {
+    font-family: 'Montserrat';
+    text-transform: uppercase !important;
     font-size: 12px;
-    }
-    
-    .form-check-label {
-        text-transform: uppercase;
-        font-family: 'Montserrat';
-        font-size: 12px;
-    }
+}
+
+.form-check-label {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 12px;
+}
 
 
-    /* Estilos Home */
+/* Estilos Home */
 
-    .caja {
-        width: 240px;
-        height: 90px;
-        background-color: white;
-        border-radius: 6px;
-        box-shadow: 2px 2px 5px #0000002e;
-    }
+.caja {
+    width: 240px;
+    height: 90px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #0000002e;
+}
 
-    .caja p {
-        font-size: 19px;
-        
-        color: #545255;
-        margin-bottom: -13px;
-    }
+.caja p {
+    font-size: 19px;
 
-    .titulo-tarjeta {
-        font-size: 14px!important;
-        font-weight: 100!important;
-        color: #545255!important;
-        
-        margin-top: 5px;
-        text-align: center;
-        
-        
-    }
+    color: #545255;
+    margin-bottom: -13px;
+}
 
-    .kpi i {
-       font-size: 37px;
-       color: #959601;
-    }
+.titulo-tarjeta {
+    font-size: 14px !important;
+    font-weight: 100 !important;
+    color: #545255 !important;
 
-    .fuente-comparación {
-        font-size: 15px!important;
-        margin-top: 5px!important;
-        color: #545255!important;
-    }
+    margin-top: 5px;
+    text-align: center;
 
-   
 
-    .subir {
-        margin-bottom: -11px!important;
-        
-        font-weight:600!important;
-    }
-    
-    .bg-tarjeta {
-        background-color:#350259;
-        height: 23px;
-        border-radius: 5px 5px 0px 0px;
-    }
+}
 
-    hr {
-        width: 90%;
-        margin-top: 15px;
-        margin-bottom: -2px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.kpi i {
+    font-size: 37px;
+    color: #959601;
+}
+
+.fuente-comparación {
+    font-size: 15px !important;
+    margin-top: 5px !important;
+    color: #545255 !important;
+}
+
+
+
+.subir {
+    margin-bottom: -11px !important;
+
+    font-weight: 600 !important;
+}
+
+.bg-tarjeta {
+    background-color: #350259;
+    height: 23px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+hr {
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.graficas {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.card-body {
+    font-size: 11px;
+    padding: 5px;
+}
+
+
+
+.badge {
+    color: #545255;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.tbody:last-child {
+    border: none !important;
+}
