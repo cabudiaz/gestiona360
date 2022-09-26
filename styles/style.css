@@ -3,6 +3,26 @@ body {
 
 }
 
+.cabecera {
+    background-image: url(https://demo.gestiona360.com.co/wp-content/uploads/2022/09/Background-Gestiona.jpg);
+    background-size: cover;
+    
+    
+}
+
+.titulo-cabecera{
+
+}
+
+.cabecera p {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
 /* Estilos NAV */
 
 .logo-nav {
@@ -17,7 +37,7 @@ body {
 
 .color-icon {
     color: #350259;
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 20px;
 }
 
@@ -28,12 +48,12 @@ body {
 .iconos img:hover {}
 
 .iconos :last-child {
-    width: 55px;
+    width: 45px;
     transition: 400ms
 }
 
 .iconos :last-child:hover {
-    width: 60px;
+    width: 49px;
 }
 
 
@@ -88,6 +108,8 @@ body {
 
 /* Estilos Home */
 
+/* KPI */
+
 .caja {
     width: 240px;
     height: 90px;
@@ -133,11 +155,7 @@ body {
     font-weight: 600 !important;
 }
 
-.bg-tarjeta {
-    background-color: #350259;
-    height: 23px;
-    border-radius: 5px 5px 0px 0px;
-}
+
 
 hr {
     width: 90%;
@@ -147,9 +165,18 @@ hr {
     margin-right: auto;
 }
 
+/* Productos más vendidos */
+
 .graficas {
-    width: 96%;
+    width: 98%;
     margin: 0 auto;
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    color: #545255;
 }
 
 .card-body {
@@ -160,6 +187,7 @@ hr {
 .card {
     border: none;
     box-shadow: 2px 2px 5px #0000002e;
+    margin-bottom: 40px;
 }
 
 .badge {
@@ -176,6 +204,51 @@ thead {
     background-color: #eee;
 }
 
-.tbody:last-child {
-    border: none !important;
+
+/* Barras de progreso */
+
+.progress {
+    width: 90%;
+    margin: 0 auto;
+    height: 6px;
+}
+
+.categoria {
+    margin-bottom: 32px;
+}
+
+
+
+/* Responsive
+   Responsive
+   Responsive */
+
+
+   /* Pantallas hasta 720PX */
+
+@media (max-width: 720px){
+    .cabecera p {
+        font-size: 18px;
+    }
+}
+
+
+/* Pantallas hasta 500PX */
+
+@media (max-width: 500px){
+    .ocultar-movil{
+        display: none;
+    }
+    .cabecera p {
+        font-size: 15px;
+    }
+    
+
+/* Pantallas hasta 369PX */
+
+@media (max-width: 369px){
+    .table > :not(caption) > * > * {
+        padding: 6px;
+    }
+}
 }
