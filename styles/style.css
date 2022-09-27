@@ -32,7 +32,7 @@ body {
 
 .iconos img {
     width: 25px;
-    margin-left: 35px;
+    margin-left: 0px;
 }
 
 .color-icon {
@@ -252,6 +252,9 @@ thead {
     }
     .cabecera p {
         font-size: 15px;
+    }
+    .derecho {
+        padding: 75px 45px;
     }
     
 

@@ -7,7 +7,7 @@ function login() {
   
 function validateLogin(){
     if(localStorage.getItem("login") == "user"){
-        console.log("into condition");
+        
         location.href = "index.html";
     }
 }
