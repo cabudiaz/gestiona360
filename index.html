@@ -20,6 +20,7 @@
     <!-- import fontawesome -->
     <script src="https://kit.fontawesome.com/fa38aa5d82.js" crossorigin="anonymous"></script>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Gestiona360</title>
 
 </head>
@@ -35,7 +36,7 @@
         <!-- Finish NAV BAR -->
         <div class="row text-center">
             <div class="cabecera pt-5 pb-5">
-                <p>Hola Carlos bienvenido,<br> Con nosotros podrás ver en detalle el rendimiento de tu negocio</p> 
+                <p>Hola Samantha ¡Gracias por visitarnos otra vez!<br>  <span class="px-5" style="font-size: 16px; line-height: 12px;">Recuerda que la clave del éxito en los negocios está en detectar hacia dónde va el mundo y llegar ahí primero. -Bill Gates</span></p> 
             </div>
 
         </div>
@@ -53,19 +54,57 @@
         <div id="productos-mas-vendidos"></div>
         <!-- Final listado de productos mas vendidos -->
 
+        <!-- Rendimiento mensual -->
+        <div id="charts">
+            
+          </div>
+          
+        <!-- Final Rendimiento mensual -->
+
        
 
     </div>
 
 
-
-
+    <script>
+          welcome();
+        
+        function welcome(){
+            Swal.fire({
+  title: '<strong>¡Hola!</u></strong>',
+  icon: 'info',
+  html:
+    'La última actualización de datos fue el <b>martes 28 de septiembre a las 6:30 PM</b>, ' +
+    '¿Deseas actualizarlos ahora?',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class="fa-solid fa-check"></i> Si!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa-solid fa-x"></i> No',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+           
+        }
+    
+    </script>
 
     <!-- Finish Container principal -->
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Custom Script Start -->
     <script src="main.js"></script>
     <!-- Custom Script End -->
+
+    
+    
+  
+
+
+
+    
+
 </body>
 
 </html>

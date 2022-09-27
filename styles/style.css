@@ -20,7 +20,7 @@ body {
     font-size: 25px;
     padding-left: 30px;
     padding-right: 30px;
-    
+    line-height: 30px;
 }
 
 /* Estilos NAV */
@@ -203,6 +203,12 @@ hr {
 thead {
     background-color: #eee;
 }
+
+.avatar img  {
+    width: 40px;
+}
+
+
 
 
 /* Barras de progreso */
