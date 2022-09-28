@@ -21,6 +21,10 @@ body {
     line-height: 30px;
 }
 
+.fuente-movil {
+    font-size: 15px;
+}
+
 /* Estilos NAV */
 
 .logo-nav {
@@ -460,6 +464,10 @@ thead {
 
     .derecho {
         padding: 75px 45px;
+    }
+
+    .fuente-movil {
+        font-size: 13px;
     }
 
 
