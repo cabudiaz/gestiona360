@@ -7,6 +7,7 @@ function route() {
   $("#productos-mas-vendidos").load("productos-mas-vendidos.html");
   $("#footer").load("footer.html");
   $("#charts").load("charts.html");
+  $("#footer").load("footer.html");
 
 }
 
