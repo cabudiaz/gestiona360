@@ -2,178 +2,180 @@
     <div class="col-md-6 py-1">
         <div class="card">
             <div class="card-body ps-4 pe-4 pb-4">
-              <h4 class="box-title">Tus ventas por semana - Mes Pasado <b>vs</b> Mes Actual </h4>
-              <canvas id="myChart"></canvas>
+                <h4 class="box-title">Tus ventas por semana - Mes Pasado <b>vs</b> Mes Actual </h4>
+                <canvas id="myChart"></canvas>
             </div>
         </div>
     </div>
 
     <script>
-      const labels = [
-        'Semana 0',
-        'Semana 1',
-        'Semana 2',
-        'Semana 3',
-        'Semana 4',
-        'Semana 5',
-        
-      ];
-    
-      const data = {
-        labels: labels,
-        datasets: [{
-          label: 'Agosto',
-          backgroundColor: '#350159',
-          borderColor: '#350159',
-          data: [0, 26, 33, 31, 30, 32],
-        },
-        {
-          label: 'Septiembre',
-          backgroundColor: '#959604',
-          borderColor: '#959604',
-          data: [0, 35, 30, 29, 33, 31],
-        }
-      ]
-  
-      };
-    
-      const config = {
-        type: 'line',
-        data: data,
-        options: {}
-      };
+        const labels = [
+            'Semana 0',
+            'Semana 1',
+            'Semana 2',
+            'Semana 3',
+            'Semana 4',
+            'Semana 5',
+
+        ];
+
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Agosto',
+                backgroundColor: '#350159',
+                borderColor: '#350159',
+                data: [0, 26, 33, 31, 30, 32],
+            },
+            {
+                label: 'Septiembre',
+                backgroundColor: '#959604',
+                borderColor: '#959604',
+                data: [0, 35, 30, 29, 33, 31],
+            }
+            ]
+
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
     </script>
 
-<script>
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-  </script>
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
 
-  <!-- Ventas por Vendedor -->
+    <!-- Ventas por Vendedor -->
     <div class="col-md-6 py-1">
-      <div class="card">
-          <div class="card-body ">
-            <div class="orders">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div class="">
-                          
-                          <div class="card-body">
-                            <h4 class="box-title">¿Sabes el rendimiento de tus vendedores? </h4>
-                              <div class="table-stats order-table ov-h">
-                                  <table class="table text-center ">
-                                      <thead>
-                                          <tr>
-                                              <th class="serial">#</th>
-                                              <th class="avatar ocultar-movil">Foto</th>
-                                              <th class="ocultar-movil">ID</th>
-                                              <th>Nombre</th>
-                                              
-                                              <th>Facturas</th>
-                                              <th>Ventas</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td class="serial">1.</td>
-                                              <td class="avatar ocultar-movil">
-                                                  <div class="round-img">
-                                                      <a href="#"><img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_a9I-AkqF9EXOPbRQ5LLQT8jYvQClcycWQ&usqp=CAU"
-                                                              alt=""></a>
-                                                  </div>
-                                              </td>
-                                              <td class="ocultar-movil"> 54 </td>
-                                              <td> <span class="name">Jose cuervo</span> </td>
-                                              
-                                              <td><span class="count">899</span></td>
-                                              <td>
-                                                  <span class="badge badge-complete">$16 M</span>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td class="serial">2.</td>
-                                              <td class="avatar ocultar-movil">
-                                                  <div class="round-img">
-                                                      <a href="#"><img class="rounded-circle" src="https://www.farmaciasmedicity.com/4125-large_default/savital-shampoo-biotina-sabila-con-550-ml.jpg"
-                                                              alt=""></a>
-                                                  </div>
-                                              </td>
-                                              <td class="ocultar-movil"> 68 </td>
-                                              <td> <span class="name">Nataly rodriguez</span> </td>
-                                              
-                                              <td><span class="count">698</span></td>
-                                              <td>
-                                                  <span class="badge badge-complete">$12 M</span>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td class="serial">3.</td>
-                                              <td class="avatar ocultar-movil">
-                                                  <div class="round-img">
-                                                      <a href="#"><img class="rounded-circle" src="https://supertiendascomunal.com/3823-large_default/detergente-ariel-regular-15-kl.jpg"
-                                                              alt=""></a>
-                                                  </div>
-                                              </td>
-                                              <td class="ocultar-movil"> 67 </td>
-                                              <td> <span class="name">Norberto rios</span> </td>
-                                              
-                                              <td><span class="count">567</span></td>
-                                              <td>
-                                                  <span class="badge badge-complete">$9 M</span>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td class="serial">4.</td>
-                                              <td class="ocultar-movil">
-                                                  <div class="round-img">
-                                                      <a href="#" class="avatar"><img class="rounded-circle avatar" src="https://www.protex-soap.com/content/dam/cp-sites/personal-care/protex-relaunch/es_co/products/relaunch/01-protex-fresh.png"
-                                                              alt=""></a>
-                                                  </div>
-                                              </td>
-                                              <td class="ocultar-movil"> 46 </td>
-                                              <td> <span class="name">Pedro perez</span> </td>
-                                              
-                                              <td><span class="count">361</span></td>
-                                              <td>
-                                                  <span class="badge badge-pending">$7 M</span>
-                                              </td>
-                                          </tr>
-                                          <tr class=" pb-0 ">
-                                              <td class="serial">5.</td>
-                                              <td class="avatar ocultar-movil ">
-                                                  <div class="round-img">
-                                                      <a href="#"><img class="rounded-circle" src="https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeEhLamc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e94f6950e0a052f62894da5e8f64245a978517b1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/5fa55aed54a12.jpeg"
-                                                              alt=""></a>
-                                                  </div>
-                                              </td>
-                                              <td class="ocultar-movil"> 55 </td>
-                                              <td> <span class="name">Juanita acosta</span> </td>
-                                              
-                                              <td><span class="count">299</span></td>
-                                              <td>
-                                                  <span class="badge badge-complete">$5 M</span>
-                                              </td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div> <!-- /.table-stats -->
-                          </div>
-                      </div> <!-- /.card -->
-                  </div> <!-- /.col-lg-8 -->
-      
-                  
-      
-      
-      
-              </div>
-          </div>
-          </div>
-      </div>
-  </div>
+        <div class="card">
+            <div class="card-body ">
+                <div class="orders">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="">
+
+                                <div class="card-body">
+                                    <h4 class="box-title">¿Sabes el rendimiento de tus vendedores? </h4>
+                                    <div class="table-stats order-table ov-h">
+                                        <table class="table text-center ">
+                                            <thead>
+                                                <tr>
+                                                    <th class="serial">#</th>
+                                                    <th class="avatar ocultar-movil">Foto</th>
+                                                    <th class="ocultar-movil">ID</th>
+                                                    <th>Nombre</th>
+
+                                                    <th>Facturas</th>
+                                                    <th>Ventas</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="serial">1.</td>
+                                                    <td class="avatar ocultar-movil">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle"
+                                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_a9I-AkqF9EXOPbRQ5LLQT8jYvQClcycWQ&usqp=CAU"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ocultar-movil"> 54 </td>
+                                                    <td> <span class="name">Jose cuervo</span> </td>
+
+                                                    <td><span class="count">899</span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">$16 M</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">2.</td>
+                                                    <td class="avatar ocultar-movil">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle"
+                                                                    src="https://www.farmaciasmedicity.com/4125-large_default/savital-shampoo-biotina-sabila-con-550-ml.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ocultar-movil"> 68 </td>
+                                                    <td> <span class="name">Nataly rodriguez</span> </td>
+
+                                                    <td><span class="count">698</span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">$12 M</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">3.</td>
+                                                    <td class="avatar ocultar-movil">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle"
+                                                                    src="https://supertiendascomunal.com/3823-large_default/detergente-ariel-regular-15-kl.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ocultar-movil"> 67 </td>
+                                                    <td> <span class="name">Norberto rios</span> </td>
+
+                                                    <td><span class="count">567</span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">$9 M</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">4.</td>
+                                                    <td class="ocultar-movil">
+                                                        <div class="round-img">
+                                                            <a href="#" class="avatar"><img
+                                                                    class="rounded-circle avatar"
+                                                                    src="https://www.protex-soap.com/content/dam/cp-sites/personal-care/protex-relaunch/es_co/products/relaunch/01-protex-fresh.png"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ocultar-movil"> 46 </td>
+                                                    <td> <span class="name">Pedro perez</span> </td>
+
+                                                    <td><span class="count">361</span></td>
+                                                    <td>
+                                                        <span class="badge badge-pending">$7 M</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class=" pb-0 ">
+                                                    <td class="serial">5.</td>
+                                                    <td class="avatar ocultar-movil ">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle"
+                                                                    src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-5.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ocultar-movil"> 55 </td>
+                                                    <td> <span class="name">Juanita acosta</span> </td>
+
+                                                    <td><span class="count">299</span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">$5 M</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- /.table-stats -->
+                                </div>
+                            </div> <!-- /.card -->
+                        </div> <!-- /.col-lg-8 -->
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
-
